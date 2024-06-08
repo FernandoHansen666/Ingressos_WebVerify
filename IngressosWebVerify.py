@@ -11,7 +11,7 @@ current_time = datetime.datetime.now()
 # URL e string alvo
 url = 'https://www.h2hc.com.br/'
 target_string = 'Em breve anunciaremos o proximo evento'
-previous_content = None
+previous_content = 'Em breve anunciaremos o proximo evento'
 
 # Configuração do WebDriver
 options = uc.ChromeOptions()
