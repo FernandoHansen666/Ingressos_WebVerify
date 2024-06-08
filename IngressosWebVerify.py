@@ -50,10 +50,10 @@ def send_discord_message(webhook_url, message):
     else:
         print(f"Falha ao enviar mensagem para o Discord: {response.status_code}")
 
-phone_number = '+NumeroWhats'
+phone_number = '+5Numero'
 whatsapp_message = 'Ingressos H2HC Liberados'
-discord_webhook_url = 'https://discord.com/api/webhooks/1248861708739674134/FTW_PvQhkQrhcjFlonYUZ9z'
-discord_webhook_url2 = 'https://discord.com/api/webhooks/1248861708739674134/FTW_PvQhkQrhcjFlonYUZ9'
+discord_webhook_url = 'https://discord.com/api/webhooks'
+discord_webhook_url2 = 'https://discord.com/api/webhooks/'
 discord_message = 'Ingressos H2HC Liberados'
 
 send_discord_message(discord_webhook_url2, "Verificador de ingressos Online!")
@@ -67,7 +67,7 @@ while True:
         send_whatsapp_message(phone_number, whatsapp_message)
         send_discord_message(discord_webhook_url, discord_message)
         send_discord_message(discord_webhook_url2, discord_message)
-        sleep(60)  # Espera por 1 minuto
+        sleep(60)  # Espera por 1 minutos
     else:
         print("Conteúdo da div não mudou.")
         print("TIMESTAMP:", current_time)
